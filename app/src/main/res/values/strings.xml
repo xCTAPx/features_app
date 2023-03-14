@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name"><u>Features App</u></string>
+    <string name="features_list">Features list</string>
+    <string name="user_name">User name</string>
+    <string name="start_feature">Start Feature</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="fragment_3">Fragment 3</string>
+    <string name="launch_mode">Launch Mode</string>
+    <string name="standard">Standard</string>
+    <string name="single_top">Single Top</string>
+    <string name="single_task">Single Task</string>
+    <string name="single_instance">Single Instance</string>
+</resources>
