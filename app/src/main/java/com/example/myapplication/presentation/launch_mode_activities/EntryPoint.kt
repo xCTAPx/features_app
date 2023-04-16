@@ -1,10 +1,13 @@
 package com.example.myapplication.presentation.launch_mode_activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import com.example.myapplication.databinding.ActivityEntryPointBinding
+import com.example.myapplication.presentation.MainActivity
+import com.example.myapplication.presentation.launch_mode_activities.single_top.SingleTopOne
 
 class EntryPoint : AppCompatActivity() {
     lateinit var binding: ActivityEntryPointBinding
@@ -33,8 +36,14 @@ class EntryPoint : AppCompatActivity() {
         singleInstanceModeButton.setOnClickListener { startSingleInstanceJourney() }
     }
 
-    private fun startStandardModeJourney() {}
-    private fun startSingleTopModeJourney() {}
+    private fun startStandardModeJourney() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+    private fun startSingleTopModeJourney() {
+        val intent = Intent(this, SingleTopOne::class.java)
+        startActivity(intent)
+    }
     private fun startSingleTaskModeJourney() {}
     private fun startSingleInstanceJourney() {}
 }
