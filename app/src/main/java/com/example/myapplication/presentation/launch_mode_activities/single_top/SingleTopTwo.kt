@@ -15,10 +15,10 @@ class SingleTopTwo : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         _viewBinding = ActivitySingleTopTwoBinding.inflate(layoutInflater)
-        navigateButton1 = _viewBinding.singleTaskNavigateButtonTwo1
-        navigateButton2 = _viewBinding.singleTaskNavigateButtonTwo2
-        navigateButton3 = _viewBinding.singleTaskNavigateButtonTwo3
-        backButton = _viewBinding.singleTaskNavigateButtonTwoBack
+        navigateButton1 = _viewBinding.singleTopNavigateButtonTwo1
+        navigateButton2 = _viewBinding.singleTopNavigateButtonTwo2
+        navigateButton3 = _viewBinding.singleTopNavigateButtonTwo3
+        backButton = _viewBinding.singleTopNavigateButtonTwoBack
 
         super.onCreate(savedInstanceState)
         setContentView(_viewBinding.root)

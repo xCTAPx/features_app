@@ -7,7 +7,7 @@
     tools:context=".presentation.launch_mode_activities.single_top.SingleTopOne">
 
     <Button
-        android:id="@+id/single_task_navigate_button_three_1"
+        android:id="@+id/single_top_navigate_button_three_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.316" />
 
     <Button
-        android:id="@+id/single_task_navigate_button_three_2"
+        android:id="@+id/single_top_navigate_button_three_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -33,11 +33,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/single_task_navigate_button_three_1"
+        app:layout_constraintTop_toBottomOf="@+id/single_top_navigate_button_three_1"
         app:layout_constraintVertical_bias="0.085" />
 
     <Button
-        android:id="@+id/single_task_navigate_button_three_3"
+        android:id="@+id/single_top_navigate_button_three_3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -48,11 +48,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/single_task_navigate_button_three_2"
+        app:layout_constraintTop_toBottomOf="@+id/single_top_navigate_button_three_2"
         app:layout_constraintVertical_bias="0.112" />
 
     <Button
-        android:id="@+id/single_task_navigate_button_three_back"
+        android:id="@+id/single_top_navigate_button_three_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/single_task_navigate_button_three_3"
+        app:layout_constraintTop_toBottomOf="@+id/single_top_navigate_button_three_3"
         app:layout_constraintVertical_bias="0.112" />
 
     <TextView
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Single Task 3"
+        android:text="Single Top 3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

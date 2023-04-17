@@ -6,8 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import com.example.myapplication.databinding.ActivityEntryPointBinding
-import com.example.myapplication.presentation.MainActivity
+import com.example.myapplication.presentation.launch_mode_activities.single_task.SingleTaskOne
 import com.example.myapplication.presentation.launch_mode_activities.single_top.SingleTopOne
+import com.example.myapplication.presentation.launch_mode_activities.standard.StandardOne
 
 class EntryPoint : AppCompatActivity() {
     lateinit var binding: ActivityEntryPointBinding
@@ -37,13 +38,16 @@ class EntryPoint : AppCompatActivity() {
     }
 
     private fun startStandardModeJourney() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, StandardOne::class.java)
         startActivity(intent)
     }
     private fun startSingleTopModeJourney() {
         val intent = Intent(this, SingleTopOne::class.java)
         startActivity(intent)
     }
-    private fun startSingleTaskModeJourney() {}
+    private fun startSingleTaskModeJourney() {
+        val intent = Intent(this, SingleTaskOne::class.java)
+        startActivity(intent)
+    }
     private fun startSingleInstanceJourney() {}
 }
