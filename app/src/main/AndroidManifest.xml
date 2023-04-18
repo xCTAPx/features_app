@@ -13,6 +13,30 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.launch_mode_activities.single_instance.SingleInstanceThree"
+            android:exported="false"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".presentation.launch_mode_activities.single_instance.SingleInstanceTwo"
+            android:exported="false"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".presentation.launch_mode_activities.single_instance.SingleInstanceOne"
+            android:exported="false"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".presentation.launch_mode_activities.single_task.SingleTaskThree"
             android:exported="false"
             android:launchMode="singleTask">

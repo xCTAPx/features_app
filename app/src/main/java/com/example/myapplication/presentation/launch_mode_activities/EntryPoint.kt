@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import com.example.myapplication.databinding.ActivityEntryPointBinding
+import com.example.myapplication.presentation.launch_mode_activities.single_instance.SingleInstanceOne
 import com.example.myapplication.presentation.launch_mode_activities.single_task.SingleTaskOne
 import com.example.myapplication.presentation.launch_mode_activities.single_top.SingleTopOne
 import com.example.myapplication.presentation.launch_mode_activities.standard.StandardOne
@@ -49,5 +50,8 @@ class EntryPoint : AppCompatActivity() {
         val intent = Intent(this, SingleTaskOne::class.java)
         startActivity(intent)
     }
-    private fun startSingleInstanceJourney() {}
+    private fun startSingleInstanceJourney() {
+        val intent = Intent(this, SingleInstanceOne::class.java)
+        startActivity(intent)
+    }
 }
