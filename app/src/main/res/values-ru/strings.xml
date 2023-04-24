@@ -12,4 +12,5 @@
     <string name="single_top">Single Top</string>
     <string name="standard">Standard</string>
     <string name="navigate">Перейти</string>
+    <string name="enter_any_name">Введите имя, пожалуйста</string>
 </resources>

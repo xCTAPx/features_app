@@ -12,4 +12,5 @@
     <string name="single_task">Single Task</string>
     <string name="single_instance">Single Instance</string>
     <string name="navigate">Navigate</string>
+    <string name="enter_any_name">Enter any name, please</string>
 </resources>

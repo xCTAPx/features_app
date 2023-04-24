@@ -1,6 +1,8 @@
 package com.example.myapplication.presentation
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,8 +11,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.FrameLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
+import androidx.annotation.RequiresApi
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.Fragment
+import com.example.myapplication.R
 import com.example.myapplication.data.ScreensParams
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.domain.FeatureController
@@ -18,6 +24,7 @@ import com.example.myapplication.presentation.fragments.First
 import com.example.myapplication.presentation.fragments.Second
 import com.example.myapplication.presentation.fragments.Third
 import com.example.myapplication.presentation.launch_mode_activities.EntryPoint
+import kotlin.math.absoluteValue
 
 class
 MainActivity : AppCompatActivity() {
@@ -71,7 +78,10 @@ MainActivity : AppCompatActivity() {
 
         val userName = userNameInput.text.toString().trim()
 
-        if (userName == "") return
+        if (userName == "") {
+            userNameInput.error = getString(R.string.enter_any_name)
+            return
+        }
 
         intent.putExtra(ScreensParams.USER_NAME, userName)
 
@@ -79,9 +89,12 @@ MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToALMEntryPoint() {
-        Log.v("MyTag", "here")
         val intent = Intent(this@MainActivity, EntryPoint::class.java)
         startActivity(intent)
+    }
+
+    private fun navigateToRecyclerViewScreen() {
+
     }
 
     private fun startFeature() {
@@ -93,6 +106,7 @@ MainActivity : AppCompatActivity() {
         when (targetScreen) {
             "ListActivity" -> navigateToFeaturesList()
             "LM Entry Point" -> navigateToALMEntryPoint()
+            "Recycler View" -> navigateToRecyclerViewScreen()
             null -> return
             else -> return
         }
