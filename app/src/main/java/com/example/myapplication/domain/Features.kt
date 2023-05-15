@@ -9,6 +9,7 @@ class FeatureController () {
             "Fragments" -> null
             "ScrollView" -> "ListActivity"
             "Activities launch mode" -> "LM Entry Point"
+            "Recycler View" -> "Recycler View"
             else -> null
         }
 
