@@ -14,4 +14,5 @@
     <string name="navigate">Перейти</string>
     <string name="enter_any_name">Введите имя, пожалуйста</string>
     <string name="recycler_title">Recycler View</string>
+    <string name="search">Поиск</string>
 </resources>

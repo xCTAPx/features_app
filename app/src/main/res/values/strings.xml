@@ -14,4 +14,5 @@
     <string name="navigate">Navigate</string>
     <string name="enter_any_name">Enter any name, please</string>
     <string name="recycler_title">Recycler View</string>
+    <string name="search">Search</string>
 </resources>
