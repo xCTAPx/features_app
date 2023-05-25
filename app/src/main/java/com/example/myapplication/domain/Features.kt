@@ -10,6 +10,7 @@ class FeatureController () {
             "ScrollView" -> "ListActivity"
             "Activities launch mode" -> "LM Entry Point"
             "Recycler View" -> "Recycler View"
+            "Multithreading" -> "Multithreading"
             else -> null
         }
 

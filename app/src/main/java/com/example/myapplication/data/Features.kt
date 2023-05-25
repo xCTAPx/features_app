@@ -7,7 +7,7 @@ val featuresList: List<Feature> = listOf(
     Feature("Fragments"),
     Feature("Activities launch mode"),
     Feature("Recycler View"),
-    Feature("Feature 5"),
+    Feature("Multithreading"),
     Feature("Feature 6"),
     Feature("Feature 7"),
     Feature("Feature 8"),

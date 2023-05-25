@@ -18,7 +18,10 @@ import com.example.myapplication.presentation.fragments.First
 import com.example.myapplication.presentation.fragments.Second
 import com.example.myapplication.presentation.fragments.Third
 import com.example.myapplication.presentation.launch_mode_activities.EntryPoint
+import com.example.myapplication.presentation.multithreading.Multithreading
+import com.example.myapplication.presentation.multithreading.scope
 import com.example.myapplication.presentation.recycler.Recycler
+import kotlinx.coroutines.launch
 
 class
 MainActivity : AppCompatActivity() {
@@ -92,6 +95,11 @@ MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun navigateToMultithreadingViewScreen() {
+        val intent = Intent(this@MainActivity, Multithreading::class.java)
+        startActivity(intent)
+    }
+
     private fun startFeature() {
         if (currentFeature == null) return
 
@@ -102,6 +110,7 @@ MainActivity : AppCompatActivity() {
             "ListActivity" -> navigateToFeaturesList()
             "LM Entry Point" -> navigateToALMEntryPoint()
             "Recycler View" -> navigateToRecyclerViewScreen()
+            "Multithreading" -> navigateToMultithreadingViewScreen()
             else -> return
         }
     }
